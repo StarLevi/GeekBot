@@ -26,7 +26,6 @@ class Plugin extends Bot {
       const tmp = gps.split('@');
       const api = `https://api.caiyunapp.com/v2.5/${this.API_KEY}/${tmp[0]}/weather.json?alert=true`;
       await axios.get(api).then(async res => {
-        console.error(res);
         const { data } = res;
         await this._sendData(data, tmp[1]);
       })
