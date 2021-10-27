@@ -17,6 +17,7 @@ class Plugin extends Bot {
     }
     this.API_KEY = caiyun_key;
     this.GPS = caiyun_gps;
+    console.log("caiyun_gps = " + caiyun_gps);
   }
 
   async run () {
